@@ -69,16 +69,16 @@ def solve_sudoku(puzzle, row_num, col_num):
 
     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-    # Going to use '0' to mean empty and
-    # first check if cell is empty to begin with
+    # Use '0' to mean empty and first check
+    # if cell is empty to begin with
     if puzzle[row_num][col_num] == 0:
 
-        # Going to run through the 'numbers' in the cell of interest
+        # Run through the 'numbers' in the cell of interest
         for i in numbers:
             if cell_value_ok(puzzle, row_num, col_num, i):
                 puzzle[row_num][col_num] = i
 
-                # Recursive check if leads to solution
+                # Recursive check if this leads to solution
                 if solve_sudoku(puzzle, row_num, col_num + 1):
                     return True
 
