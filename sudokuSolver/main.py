@@ -48,7 +48,7 @@ def solve_sudoku(puzzle, row_num, col_num):
     """
     Solves the sudoku puzzle using recursive means and the
     backtracking algorithm. NOTE: Only works with valid sudoku
-    puzzle inputs. Error will occur otherwise.
+    puzzle inputs.
     :param puzzle: sudoku puzzle in the form of a 2D list
     :param row_num: integer value from 0-8
     :param col_num: integer value from 0-8
